@@ -1,6 +1,6 @@
-# Advanced Calculator
+# Kaushal Calculator
 
-This advanced calculator built in HTML, CSS, and JavaScript provides a versatile set of features aimed to simplify mathematical tasks and provide accurate results.
+This is an advanced calculator built in HTML, CSS, and JavaScript provides a versatile set of features aimed to simplify mathematical tasks and provide accurate results.
 
 ## Usage 
 Live Demo Link: https://kaushalvarun.github.io/advanced-calculator/ <br>
