@@ -3,7 +3,7 @@
 This advanced calculator built in HTML, CSS, and JavaScript provides a versatile set of features aimed to simplify mathematical tasks and provide accurate results.
 
 ## Usage 
-Live Demo Link: https://kaushalvarun.github.io/advanced-calculator/
+Live Demo Link: https://kaushalvarun.github.io/advanced-calculator/ <br>
 Enter the desired mathematical expression or select the appropriate function buttons to perform calculations. The calculator provides real-time results and error messages for seamless usage.
 
 
