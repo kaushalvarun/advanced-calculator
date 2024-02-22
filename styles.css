@@ -1,0 +1,74 @@
+/* Body Styling */
+body {
+    background-color: #fadfad;
+}
+
+/* Calculator Box */
+.calculator {
+    background-color:#b9adfa;
+    width: 375px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#calc {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+/* Additional Controls */
+.additional-controls {
+    display: flex;
+    flex-direction: column; 
+}
+
+.log-controls {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 5px; 
+}
+
+.acItem {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Buttons */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.button-grid button {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#clear {
+    grid-column: span 2;
+    background-color: red;
+    color: white;
+}

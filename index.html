@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kaushal Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Kaushal Calculator</h1>
+        <form name="form1" class="calculator-form">
+            <!-- Input/Answer Field -->
+            <input id="calc" type="text" name="answer">
+
+            <!-- Additional Controls -->
+            <div class="additional-controls">
+                <div id="angleUnitText" class="acItem">(Deg)</div>
+                <div class="log-controls">
+                    <div class="acItem">Log Exponent:</div>
+                    <input type="text" id="logExp" class="acInput" size="5" value="">
+                    <div class="acItem">Log Base:</div>
+                    <input type="text" id="logBase" class="acInput" size="5" value="10">
+                </div>
+                <br>
+            </div>
+
+            <div class="button-grid">
+                <!-- Memory FunctionButtons -->
+                <button type="button" onclick="memoryStore()">MS</button>
+                <button type="button" onclick="memoryRecall()">MR</button>
+                <button type="button" onclick="memoryAdd()">M+</button>
+                <button type="button" onclick="memorySubtract()">M-</button>
+
+                <!-- Basic Arithmetic Function Buttons-->
+                <button type="button" onclick="appendToAnswer('1')">1</button>
+                <button type="button" onclick="appendToAnswer('2')">2</button>
+                <button type="button" onclick="appendToAnswer('3')">3</button>
+                <button type="button" onclick="appendToAnswer('+')">+</button>
+                <button type="button" onclick="appendToAnswer('4')">4</button>
+                <button type="button" onclick="appendToAnswer('5')">5</button>
+                <button type="button" onclick="appendToAnswer('6')">6</button>
+                <button type="button" onclick="appendToAnswer('-')">-</button>
+                <button type="button" onclick="appendToAnswer('7')">7</button>
+                <button type="button" onclick="appendToAnswer('8')">8</button>
+                <button type="button" onclick="appendToAnswer('9')">9</button>
+                <button type="button" onclick="appendToAnswer('*')">*</button>
+                <button type="button" onclick="appendToAnswer('/')">/</button>
+                <button type="button" onclick="appendToAnswer('0')">0</button>
+                <button type="button" onclick="appendToAnswer('.')">.</button>
+                <button type="button" onclick="calculateResult()">=</button>
+
+                <!-- Trig Functions Buttons -->
+                <button type="button" onclick="toggleAngleUnit()">Deg/Rad</button>
+                <button type="button" onclick="calculateSin()">sin</button>
+                <button type="button" onclick="calculateCos()">cos</button>
+                <button type="button" onclick="calculateCosec()">cosec</button>
+                <button type="button" onclick="calculateSec()">sec</button>
+                <button type="button" onclick="calculateTan()">tan</button>
+                <button type="button" onclick="calculateCot()">cot</button>
+
+                <!-- Log Function Button-->
+                <button type="button" onclick="calculateLog()">log</button>
+
+                <!-- Stats Functions Buttons -->
+                <button type="button" onclick="calculateMean()">Mean</button>
+                <button type="button" onclick="calculateMedian()">Median</button>
+                <button type="button" onclick="calculateMode()">Mode</button>
+                <button type="button" onclick="calculateStandardDeviation()">Std Dev</button>
+
+                <!-- Reset Buttons -->
+                <button type="button" onclick="clearInput()" id="clear">Clear Answer</button>
+                <button type="button" onclick="clearMemory()" id="clear">Clear Memory</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
